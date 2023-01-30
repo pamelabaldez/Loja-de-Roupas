@@ -1,0 +1,7 @@
+{
+  "name": "lojaderoupas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
