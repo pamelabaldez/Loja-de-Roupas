@@ -1,17 +1,42 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!--Primeiro Card-->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Roupas de Verão</ion-card-title>
+      <ion-card-subtitle>Aproveite a coleção do verão</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Você já conhece a coleção do verão das Lojas Senac?
+    </ion-card-content>
+  
+    <ion-button fill="clear">Ver coleção</ion-button>
+    <ion-button fill="clear">Início</ion-button>
+  </ion-card>
+
+  <!--Segundo Card-->
+
+  <ion-card>
+
+  <ion-card-header>
+    <ion-img class="img-kids" src="https://dpj1qgempagj9.cloudfront.net/site/2020/artes-semana-17/infantil/bubbles-v2/bubble-home-infantil-4-12-anos-v2.png"></ion-img>
+
+    <ion-card-title>
+      Roupas Infantis
+      <ion-card-subtitle>
+        Conheça a nova coleção infantil
+      </ion-card-subtitle>
+
+    </ion-card-title>
+
+  </ion-card-header>  
+
+  <ion-button fill="clear" [routerLink]="['/infantis']">Ver coleção</ion-button>
+
+  <ion-button fill="clear">Início</ion-button>
+
+  </ion-card>
+
 </ion-content>
