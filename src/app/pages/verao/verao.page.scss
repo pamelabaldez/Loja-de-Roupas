@@ -1,0 +1,44 @@
+.toolbar{
+    align-items: flex-end;
+    justify-content: space-between;
+    display: flex;
+}
+
+.botao-de-voltar{
+    padding-right: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 50px;
+    display: flex;
+}
+
+.preco-roupa{
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.botao-de-compra{
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    display: flex;
+}
+
+.icons{
+    min-width: 30px;
+    font-size: 25px;
+
+}
+
+.botoes-esquerda{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
