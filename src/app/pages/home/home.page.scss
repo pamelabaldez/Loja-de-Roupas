@@ -1,0 +1,125 @@
+@media screen and (max-width:700px){
+
+    .headerX {
+        align-items: flex-end;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        margin-top: 50px;
+        padding-top: 5px;
+       // padding-bottom: 5px;
+        background-color: #753de6;
+        z-index: 9999;
+        padding-bottom: 100px;
+      }
+    
+}
+
+.headerX {
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    //flex-direction: row;
+    //padding-right: 30px;
+    padding-top: 10px;
+    background-color: #753de6;
+    z-index: 10;
+    padding-bottom: -40px;
+  }
+
+  .headerX ion-icon{
+   
+    color: #fff;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    cursor: hand;
+    padding-bottom: 10px;
+  }
+
+
+.header {
+    display: flex;
+    margin-bottom: 700px;
+    justify-content: center;
+    padding: 1px;
+    align-items: center;
+    padding-top: 10px;
+    color: #8C52FF;
+    border: none;
+    margin-left: 10px;
+}
+ 
+
+
+
+ion-list {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    // z-index: 9999;
+    margin-right: 37%;
+    padding-bottom: -20px;
+
+   
+
+  }
+  
+
+  .header ion-button{
+    font-size: 17px;
+   // font-family: Trebuchet MS, sans-serif;
+    font-weight: 50;
+    font-stretch: ultra-expanded;	
+  }
+
+ion-item{
+    padding: 0px;
+    margin: 0px;
+    color: #753de6;
+}
+  
+ion-item a:hover{
+    background: #753de6;
+}
+
+ ion-button  {
+
+    display: block;
+    //margin: 0;
+    position: relative;
+    color: #2a302f;
+   // white-space: nowrap;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 00;
+    //padding: 0px 5px 0px 5px;
+    padding-bottom: 35px;
+    height: 65px;
+    transition: .4s;    
+    z-index: 9999;
+   
+  
+}
+
+ion-list ion-item:hover{
+    color: #100b1a;
+}
+
+@media screen and (max-width: 400px){
+    
+  .headerX {
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    //flex-direction: row;
+    //padding-right: 30px;
+    padding-top: 10px;
+    background-color: #000000;
+    z-index: 10;
+    padding-bottom: -40px;
+  }
+  
+}
