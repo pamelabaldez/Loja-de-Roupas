@@ -22,7 +22,7 @@ export class NewsPage implements OnInit {
 
     const container = document.querySelector(".container") as HTMLInputElement | null;
 
-    hamburger?.addEventListener("mouseover", () =>
+    hamburger?.addEventListener("click", () =>
    container?.classList.toggle("show-menu")
 );
   }

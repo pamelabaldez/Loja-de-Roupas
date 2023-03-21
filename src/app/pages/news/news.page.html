@@ -2,7 +2,7 @@
      
   <ion-icon  routerLink='/cadastro' routerLinkActive="active-link" name="log-in-outline"></ion-icon>
   <ion-icon fill="clear" routerLink="/login" routerLinkActive="active-link" name="person-outline">Login</ion-icon>
-  <ion-icon fill="clear" routerLink="/favoritos" routerLinkActive="active-link" name="heart-outline">Favoritos</ion-icon>
+  <ion-icon fill="clear" routerLink="/favoritos" routerLinkActive="active-link" name="cart-outline">Favoritos</ion-icon>
 
 
 
@@ -25,13 +25,16 @@
 
 
 <ion-button fill="clear" style="color:#8C52FF; margin-left: 70px;" routerLink="/home" routerLinkActive="active-link">Home</ion-button>
-<ion-button fill="clear" style="color:#8C52FF; margin-left: 70px;" routerLink="/news"   routerLinkActive="active-link">News</ion-button>
+<ion-button fill="clear" style="color:#8C52FF; margin-left: 70px; margin-right: 20px;" routerLink="/news"   routerLinkActive="active-link">News</ion-button>
 <!--<ion-button fill="clear" style="color:#8C52FF; margin-left: 70px;" routerLink="/roupas"  routerLinkActive="active-link">Roupas</ion-button>-->
 <ion-button fill="clear" routerLink="/roupas" >
-
+  <div class="opcoes">
 <div class="dropdown">
-<a style="color:#8C52FF; margin-left: 70px;" (mouseenter)="showDropdown()" >Roupas </a>
+
+<a style="color:#8C52FF; margin-left: 3px;" (mouseenter)="showDropdown()" >Roupas </a>
 <ion-icon (mouseenter)="showDropdown()" style="color:#8C52FF; margin-bottom: -2px;" name="chevron-down-outline"></ion-icon>
+
+</div>
 
 
 </div>
@@ -47,9 +50,11 @@ Masculino
 </ion-item>
 </div>
 
+
 </ion-list>
 <ion-button fill="clear" style="color:#8C52FF; margin-left: 70px;" routerLink="/faleconosco"  routerLinkActive="active-link">Fale Conosco</ion-button>
 </div>
+
 
 <div class="container" (click)="toggleMenu()">
 
@@ -62,19 +67,40 @@ Masculino
   <aside class="sidebar">
       <nav>
           <ul class="menu">
-              <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+              <li class="menu-item"><a routerLink="/home" class="menu-link">Home</a></li>      <br><br><br>
+
+
+              <li class="menu-item">
+                <div class="dropdown-2"> 
+                  <a routerLink="/roupas" (mouseenter)="showDropdown()" class="menu-link">Roupas</a>
+              <ion-icon (mouseenter)="showDropdown()" style="color:#6332c4; padding-left: 6px; " name="chevron-down-outline"></ion-icon> </div>
+
+              <ion-list class="dropdown2list"  (mouseover)="showDropdown()" lines="none" *ngIf="dropdownVisible" >
+                <div class="dropdown2item" (mouseleave)="hideDropdown()">
+
+                <ion-item routerLink="/roupafem" >
+                Feminino
+                </ion-item>
+                <ion-item routerLink="/roupamasc">
+                Masculino
+                </ion-item>
+                </div>
+                
+                </ion-list>
+
+              </li>      <br><br><br>
+
+
+              <li class="menu-item"><a routerLink="/news" class="menu-link">News</a></li><br>      <br><br>
+              <li class="menu-item"><a routerLink="/faleconosco" class="menu-link">Fale Conosco</a></li>
           </ul>
       </nav>
   </aside>
+
+
+
+
 </div>
-
-
-
-
 </ion-header>
 
 <ion-content>
